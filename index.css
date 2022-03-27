@@ -1,0 +1,603 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #4e4e66;
+}
+
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* * ============================== */
+/* * ===== CONTENEDOR IMAGEN ====== */
+/* * ============================== */
+
+.contenedor-imagen {
+  height: 100vh;
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: 0 bottom;
+}
+
+/* * ============================== */
+/* * ============ MAIN ============ */
+/* * ============================== */
+
+main {
+  min-height: 100vh;
+}
+
+main .contenido p {
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #525151;
+}
+
+main .contenido .titulo {
+  font: normal 50px Cookie, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  padding-top: 40px;
+}
+
+main .contenido .fecha {
+  font-size: 14px;
+	color: #B5B5B5;
+}
+
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+
+aside {
+  min-width: 30%;
+  margin: 40px 20px 20px 0;
+  height: 100%;
+	background: #1D2F3D;
+  padding: 20px;
+  border-radius: 3px;
+  position: sticky;
+  top: 20px;
+}
+
+aside .titulo {
+	font-family:Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+aside .indice a {
+  display: block;
+  margin-bottom: 10px;
+  color: #424258;
+}
+
+/* * ============================== */
+/* * ========== FOOTER ============ */
+/* * ============================== */
+
+
+
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+
+div.background img{
+  width: 70px;
+  height: 70px;
+  margin-top: -50px;
+  margin-left: 550px;
+  position: absolute;
+  flex: end;}
+div.contenedor{
+  border-radius: 4px;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  background-size: contain;
+  border-left: 2px solid #1a1c20;
+  border-right: 2px solid #1a1c20;
+}
+div.post h1{
+  font: normal 32px Cookie, Arial, Helvetica, sans-serif;
+  color: rgb(243, 222, 198);
+}
+
+div.post p{
+  color: white;
+}
+
+aside{
+  border-radius: 4px;
+  background-image: linear-gradient(315deg, #485461 0%, #e9b72f 74%);
+    color:black;
+}
+aside a{
+  text-decoration: none;
+}
+aside a:hover{
+  color: white;
+}
+
+div.container-fluid a.navbar-brand{
+	margin:0;
+  color: white;
+  display: flex;
+  align-items: center;
+  font: normal 32px Cookie, Arial, Helvetica, sans-serif;
+}
+nav.navbar{
+  border-bottom: 3px solid rgb(58, 57, 71);
+  background-image: linear-gradient(315deg, #242d38 0%, #535879 74%);
+}
+
+a.navbar-brand{
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: rgba(255, 255, 255, 0.9);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(230, 211, 211, 0.603);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.938);
+}
+
+
+/* porductos */
+.products {
+  display: inline-block;
+  display: grid;
+  justify-content: space-around;
+  text-align: center;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(2, 200px);
+  width: 100%;
+  height: 600px;
+}
+.products img {
+  display: inline-block;
+  opacity: 0.8;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: solid black 2px;
+}
+
+.products img:hover {
+  opacity: 1;
+}
+
+.productTitle {
+	color:black;
+  text-align: center;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 1024px) {
+  .products {
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(6, 180px);
+    width: 100%;
+    height: 924px;
+  }
+  .products img {
+    display: inline-block;
+    opacity: 0.8;
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    border: solid black 2px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .productTitle {
+    font-size: 35px;
+  }
+  .products img {
+    opacity: 0.8;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: solid black 2px;
+  }
+
+  .products {
+    display: inline-block;
+    width: 100%;
+    height: 2000px;
+	  background-color:#242d38;
+  }
+}
+@media only screen and (max-width: 699px) and (min-width: 330px) {
+  .products img {
+    display: inline-block;
+    opacity: 0.8;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: solid black 2px;
+
+  }
+  .products {
+    display: inline-block;
+    width: 100%;
+    height: 3752px;
+    background-image: linear-gradient(315deg, #242d38 40%, #484d69 60%);
+  }
+}
+
+
+  .productTitle{
+  border-radius: 4px;
+	  border-top:solid 2px #1a1c20;
+}
+
+
+  
+  .productos_{
+  background-image: url(./imagenes/imagenMadera.jpg);
+  border-bottom: solid 2px #1a1c20;
+	  border-radius:4px;
+}
+
+/* Clases Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(315deg, #1d232b 0%, #777d9c 74%);
+}
+
+footer a img {
+  margin: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+footer a img:hover {
+  opacity: 0.6;
+}
+footer a img:hover {
+  transform: scale(1.5, 1.5);
+  transition-duration: 2s;
+  opacity: 0.6;
+}
+@media only screen and (max-width: 769px) {
+  footer a img {
+    margin: 30px;
+    width: 40px;
+    height: 40px;
+  }
+  footer a img:hover {
+	     
+    transform: scale(1.5, 1.5);
+    transition-duration: 2s;
+    opacity: 0.6;
+  }
+}
+@media only screen and (max-width:1032px) and (min-width:1023px){
+  div.background img{
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+    margin-left: 540px;
+    position: absolute;
+    flex: end;}
+}
+@media only screen and (max-width:1022px) and (min-width:901px){
+  div.background img{
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+    margin-left: 470px;
+    position: absolute;
+    flex: end;}
+}
+
+@media screen and (max-width: 900px){
+	
+	aside{
+    position: static;
+    margin: 40px 0 0 0;
+  }
+  main .contenedor {
+    flex-direction: column;
+  }
+	div.background img{
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+    margin-left: 690px;
+    position: absolute;
+    flex: end;}
+}
+@media only screen and (max-width:860px) and (min-width:768px){
+  div.background img{
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+    margin-left: 600px;
+    position: absolute;
+    flex: end;}
+}
+@media only screen and (max-width:768px) and (min-width:591px){
+  div.background img{
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+    margin-left: 580px;
+    position: absolute;
+    flex: end;}
+}
+@media only screen and (max-width:736px) and (min-width:590px){
+  div.background img{
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+    margin-left: 440px;
+    position: absolute;
+    flex: end;}
+}@media only screen and (max-width:589px) and (min-width:490px){
+  div.background img{
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+    margin-left: 350px;
+    position: absolute;
+    flex: end;}
+}
+@media only screen and (max-width:489px) and (min-width:446px){
+  div.background img{
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+    margin-left: 310px;
+    position: absolute;
+    flex: end;}
+}
+@media only screen and (max-width:445px) and (min-width:400px){
+  div.background img{
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+    margin-left: 300px;
+    position: absolute;
+    flex: end;}
+}
+
+/* Clases de HTML Nuestras Picadas */
+.claseBody {
+  background-color: rgba(0, 0, 0, 0.712);
+  margin: 0;
+  padding: 0;
+  height: 762px;
+  background-size: cover;
+}
+
+.fondo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: 3px solid black;
+  height: 765px;
+  background-image: url("./imagenes/imagenMadera.jpg");
+}
+.classP {
+  display: flex;
+  justify-content: center;
+}
+.claseParrafo {
+  color: white;
+  font: normal 50px Cookie, Arial, Helvetica, sans-serif;
+  margin-top: 145px;
+  position: absolute;
+}
+.imagenesPicadas {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 280px;
+}
+
+div.card-body {
+  background-color: #292c2f;
+}
+div.card-body p {
+  color: rgb(187, 177, 177);
+}
+h5.card-title {
+  font: 20px Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+div.row {
+  background-color: #292c2f;
+}
+
+div.mb-3 {
+  background-color: #292c2f;
+  border: 3px solid black;
+}
+.text-muted {
+  font-size: 15px;
+}
+
+.divBotton {
+  display: flex;
+  justify-content: center;
+}
+/* Boton de HTML Nuestras Picadas con animation */
+
+.divBotton button {
+  animation-name: animation;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+@keyframes animation {
+  0% {
+    width: 250px;
+  }
+  10% {
+    width: 255px;
+  }
+  20% {
+    width: 260px;
+  }
+  30% {
+    width: 265px;
+  }
+  40% {
+    width: 270px;
+  }
+  50% {
+    width: 275px;
+  }
+  60% {
+    width: 270px;
+  }
+  70% {
+    width: 265px;
+  }
+  80% {
+    width: 260px;
+  }
+  90% {
+    width: 255px;
+  }
+  100% {
+    width: 250px;
+  }
+}
+
+button.btn-outline-secondary {
+  font-size: 25px;
+}
+
+.enviosP {
+  display: flex;
+  justify-content: center;
+}
+.imgEnvio {
+  width: 150px;
+  height: 150px;
+  
+}
+
+.pEnvio {
+  margin-top: 70px;
+  width: 400px;
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:20px;
+  color: rgb(173, 173, 173);
+}
+
+div button.btn {
+  border: solid 3px orange;
+  background-color: rgba(221, 156, 36, 0);
+}
+div button.btn {
+  margin-bottom: 12px;
+}
+
+div button.btn:hover {
+  border: solid 2px rgb(189, 140, 50);
+  background-color: rgb(133, 97, 30);
+}
+
+
+/* section picadas */
+.bodyPicadas{
+  background-image: url(./imagenes/imagenMadera.jpg);
+} 
+
+.bg-section{
+  width: 100%;
+  display:flex;
+  justify-content:space-around;
+  margin-top: 50px;
+  height: auto;
+}
+.classTitlePicadas{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font: normal 80px Cookie, Arial, Helvetica, sans-serif;
+  margin-top:30px;
+}
+
+@media only screen and (max-width:900px){
+  .bg-section{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 80px;
+    height: auto;
+  }
+  div.card{
+    margin-bottom:20px;}
+
+    .pEnvio {
+      margin-top: 70px;
+      width: 400px;
+      margin-left: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:15px;
+      color: rgb(173, 173, 173);
+    }
+
+    .bodyPicadas{
+      background-image: linear-gradient(315deg, #242d38 40%, #484d69 60%);
+    }  
+}
+
+@media only screen and (max-width:450px){
+  .pEnvio {
+    margin-top: 40px;
+    width: 400px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:10px;
+    color: rgb(173, 173, 173);
+  }
+  .imgEnvio {
+    width: 100px;
+    height: 100px;
+    margin-left:25px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  
+  .classTitlePicadas{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font: normal 50px Cookie, Arial, Helvetica, sans-serif;
+    margin-top:20px;}
+}
